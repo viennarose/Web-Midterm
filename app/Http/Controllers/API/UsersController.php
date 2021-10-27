@@ -18,7 +18,7 @@ class UsersController extends Controller {
         if (count($rentals) > 0) {
             return response()->json($rentals, $this->successStatus);
         } else {
-            return response()->json(['Error' => 'There is no registrations in the database'], 404);
+            return response()->json(['Error' => 'There is no rentals in the database'], 404);
         }
     }
 }
